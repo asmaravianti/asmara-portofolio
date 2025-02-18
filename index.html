@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaya's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LE PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#academic">Academic Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#favourites">Favourites</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">LE PORTFOLIO</h1>
+            <p>A Touch of Vintage, A Dash of Modern</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container py-5">
+        <h2 class="section-title">About Me</h2>
+        <p>Hi! I'm Yaya, a passionate Computer Science student at Eötvös Loránd University (ELTE). Currently pursuing my Bachelor's degree under the Stipendium Hungaricum Scholarship, I love exploring the intersection of technology and creativity.</p>
+    </section>
+
+    <!-- Academic Story Section -->
+    <section id="academic" class="container py-5">
+        <h2 class="section-title">Academic Story</h2>
+        <p><strong>Eötvös Loránd University (ELTE)</strong><br>September 2022 - Present<br>Bachelor of Computer Science<br>Stipendium Hungaricum Scholarship holder</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container py-5">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card rotate-on-hover">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Event Management API">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Management API with Data Analysis</h5>
+                        <p class="card-text">Developed a FastAPI web API for managing events with data analysis features.</p>
+                        <a href="https://github.com/asmaravianti/event-planner-app.git" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Yaya | Crafted with passion and curiosity</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

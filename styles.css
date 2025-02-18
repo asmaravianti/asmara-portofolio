@@ -1,0 +1,64 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #F4C6CC;
+    color: #000;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+    transition: background 0.3s;
+}
+
+.navbar.scrolled {
+    background: #F4C6CC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(244, 198, 204, 0.5);
+}
+
+.animate-text {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+}
+
+.rotate-on-hover:hover {
+    transform: rotate(3deg) scale(1.05);
+}
+
+footer {
+    background: #000;
+    color: #F4C6CC;
+}
