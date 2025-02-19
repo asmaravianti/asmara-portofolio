@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaya's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,47 +31,88 @@
     <!-- Full-Screen Sections -->
     <section id="home" class="full-screen hero">
         <div class="hero-content">
-            <h1 class="animate-text">LE PORTFOLIO</h1>
-            <p>A Touch of Vintage, A Dash of Modern</p>
+            <h1 class="animate-text animate__animated animate__fadeInDown">LE PORTFOLIO</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">A Touch of Vintage, A Dash of Modern</p>
         </div>
     </section>
 
     <section id="about" class="full-screen container d-flex align-items-center">
-        <div>
+        <div class="about-content animate__animated animate__fadeInLeft">
             <h2 class="section-title">About Me</h2>
-            <p>Hi! I'm Yaya, a passionate Computer Science student at Eötvös Loránd University (ELTE). Currently pursuing my Bachelor's degree under the Stipendium Hungaricum Scholarship, I love exploring the intersection of technology and creativity.</p>
+            <p>Hi! I'm Yaya, a passionate Computer Science student at Eötvös Loránd University (ELTE). Currently pursuing my Bachelor's degree under the Stipendium Hungaricum Scholarship, I love exploring the intersection of technology and creativity. When I'm not coding, you can find me writing quirky articles or dreaming up new ways to make the web a more fun and inclusive place.</p>
         </div>
     </section>
 
     <section id="academic" class="full-screen container d-flex align-items-center">
-        <div>
+        <div class="academic-content animate__animated animate__fadeInRight">
             <h2 class="section-title">Academic Story</h2>
             <p><strong>Eötvös Loránd University (ELTE)</strong><br>September 2022 - Present<br>Bachelor of Computer Science<br>Stipendium Hungaricum Scholarship holder</p>
         </div>
     </section>
 
-    <section id="portfolio" class="full-screen container">
-        <h2 class="section-title text-center">Portfolio</h2>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container py-5">
+        <h2 class="section-title text-center animate__animated animate__fadeIn">Portfolio</h2>
+        <p class="text-center mb-5">Here are some of my favorite projects. From APIs to interactive websites, I love building things that are both functional and fun!</p>
         <div class="row justify-content-center">
-            <div class="col-md-6 mb-4">
+            <!-- Event Management API -->
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
                 <div class="card rotate-on-hover">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Event Management API">
+                    <img src="assets/tech1.jpeg" class="card-img-top" alt="Event Management API">
                     <div class="card-body">
                         <h5 class="card-title">Event Management API with Data Analysis</h5>
-                        <p class="card-text">Developed a FastAPI web API for managing events with data analysis features.</p>
+                        <p class="card-text">Developed a FastAPI web API for managing events with data analysis features. Perfect for event planners who love data as much as confetti.</p>
                         <a href="https://github.com/asmaravianti/event-planner-app.git" target="_blank" class="btn btn-primary">View on GitHub</a>
                     </div>
                 </div>
             </div>
+            <!-- Travel Website: Konyo’s Adventure -->
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                <div class="card rotate-on-hover">
+                    <img src="assets/tech2.jpeg" class="card-img-top" alt="Travel Website">
+                    <div class="card-body">
+                        <h5 class="card-title">Travel Website: Konyo’s Adventure</h5>
+                        <p class="card-text">A static website with responsive design showcasing travel experiences. Packed with accessibility features like skip navigation, screen reader support, and visual impairment options. Because everyone deserves a great adventure!</p>
+                        <a href="https://asmaravianti.github.io/index.html" target="_blank" class="btn btn-primary">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3D Clickable Flashcard -->
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                <div class="card rotate-on-hover">
+                    <img src="assets/tech3.jpeg" class="card-img-top" alt="3D Flashcard">
+                    <div class="card-body">
+                        <h5 class="card-title">3D Clickable Flashcard</h5>
+                        <p class="card-text">An interactive 3D flashcard interface that makes learning fun and engaging. Who said flashcards have to be boring?</p>
+                        <a href="https://github.com/asmaravianti/3d-flashcard" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Parallax Scrolling Website -->
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                <div class="card rotate-on-hover">
+                    <img src="assets/tech5.jpeg" class="card-img-top" alt="Parallax Scrolling">
+                    <div class="card-body">
+                        <h5 class="card-title">Parallax Scrolling Website</h5>
+                        <p class="card-text">A visually engaging scrolling effect for an immersive user experience. It’s like a rollercoaster ride for your eyes!</p>
+                        <a href="https://github.com/asmaravianti/parallax-website" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>Want to see more? Check out my <a href="https://github.com/asmaravianti" target="_blank" class="btn btn-outline-primary">GitHub</a> for more projects!</p>
         </div>
     </section>
 
     <!-- Substack Section -->
-    <section id="substack" class="full-screen container">
-        <h2 class="section-title text-center">Substack Articles</h2>
+    <section id="substack" class="container py-5">
+        <h2 class="section-title text-center animate__animated animate__fadeIn">Substack Articles</h2>
+        <p class="text-center mb-5">I write about life, technology, and the hilarious quirks of modern society. Here are some of my favorites:</p>
         <div class="row justify-content-center">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
                 <div class="card rotate-on-hover">
+                    <img src="assets/different.jpeg" class="card-img-top" alt="Why Are We All Secretly Obsessed with Being 'Different'?">
                     <div class="card-body">
                         <h5 class="card-title">Why Are We All Secretly Obsessed with Being 'Different'?</h5>
                         <p>The Hilarious Irony of Trying to Stand Out in a World Where Everyone’s Doing the Same Thing</p>
@@ -78,8 +120,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInRight">
                 <div class="card rotate-on-hover">
+                    <img src="assets/illusion-of-choice.jpeg" class="card-img-top" alt="The Illusion of Choice">
                     <div class="card-body">
                         <h5 class="card-title">The Illusion of Choice: Are We Really in Control of Our Lives?</h5>
                         <p>How Algorithms, Society, and My Spotify Wrapped Are Secretly Running the Show</p>
@@ -87,8 +130,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
                 <div class="card rotate-on-hover">
+                    <img src="assets/modern-realtionship.jpeg" class="card-img-top" alt="The Hidden Rules of Modern Friendship">
                     <div class="card-body">
                         <h5 class="card-title">The Hidden Rules of Modern Friendship</h5>
                         <p>Ghosting. The silent killer of modern friendships. One day you’re texting memes back and forth, and the next day—poof—they’ve vanished.</p>

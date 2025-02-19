@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+    background: url('assets/hero-bg.jpeg') no-repeat center center/cover;
     color: #000;
     position: relative;
     overflow: hidden;
@@ -39,19 +39,36 @@ body {
     background: rgba(244, 198, 204, 0.5);
 }
 
-.animate-text {
-    animation: fadeIn 3s ease-in-out;
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
+.hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.full-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s;
+    height: 100%;
 }
 
 .rotate-on-hover:hover {
@@ -61,4 +78,5 @@ body {
 footer {
     background: #000;
     color: #F4C6CC;
+    padding: 1rem 0;
 }
